@@ -24,7 +24,7 @@ jobs:
           destination_head_branch: "features"
           user_email: "jhameson.farias@fitbank.com.br"
           user_name: "Fit-jhameson-farias"
-          reviewers: "Fit-jhameson-farias"
+          reviewers: "Jhameson"
 
       - name: Create pull request on repository-02
         uses: Fit-jhameson-farias/action-pr@main
