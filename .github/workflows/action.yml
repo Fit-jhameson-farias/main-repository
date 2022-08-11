@@ -1,0 +1,37 @@
+name: Create Pull requests
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Create pull request on repository-01
+        uses: Fit-jhameson-farias/action-pr@v1.0.1
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_folder: "*"
+          destination_repo: "Fit-jhameson-farias/repository-01"
+          destination_head_branch: "features"
+          user_email: "jhameson.farias@fitbank.com.br"
+          user_name: "Fit-jhameson-farias"
+
+      - name: Create pull request on repository-02
+        uses: Fit-jhameson-farias/action-pr@v1.0.1
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_folder: "*"
+          destination_repo: "Fit-jhameson-farias/repository-02"
+          destination_head_branch: "features"
+          user_email: "jhameson.farias@fitbank.com.br"
+          user_name: "Fit-jhameson-farias"
