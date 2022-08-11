@@ -1,4 +1,4 @@
-name: Create Pull requests
+name: Criar Pull Request nos repositórios WL
 
 on:
   push:
