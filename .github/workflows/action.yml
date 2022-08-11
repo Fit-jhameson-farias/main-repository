@@ -36,3 +36,4 @@ jobs:
           destination_head_branch: "features"
           user_email: "jhameson.farias@fitbank.com.br"
           user_name: "Fit-jhameson-farias"
+          reviewers: "jhameson"
