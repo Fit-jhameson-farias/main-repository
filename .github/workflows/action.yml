@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Create pull request on repository-01
-        uses: Fit-jhameson-farias/action-pr@v1.0.1
+        uses: Fit-jhameson-farias/action-pr@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
@@ -26,7 +26,7 @@ jobs:
           user_name: "Fit-jhameson-farias"
 
       - name: Create pull request on repository-02
-        uses: Fit-jhameson-farias/action-pr@v1.0.1
+        uses: Fit-jhameson-farias/action-pr@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
