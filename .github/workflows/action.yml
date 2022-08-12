@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Create pull request on repository-01
-        uses: Fit-jhameson-farias/action-pr@main
+        uses: Fitbank-Pagamentos-Eletronicos/osb-action-create-pull-request@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
@@ -24,10 +24,9 @@ jobs:
           destination_head_branch: "features"
           user_email: "jhameson.farias@fitbank.com.br"
           user_name: "Fit-jhameson-farias"
-          reviewers: "Jhameson"
 
       - name: Create pull request on repository-02
-        uses: Fit-jhameson-farias/action-pr@main
+        uses: Fitbank-Pagamentos-Eletronicos/osb-action-create-pull-request@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
@@ -36,4 +35,3 @@ jobs:
           destination_head_branch: "features"
           user_email: "jhameson.farias@fitbank.com.br"
           user_name: "Fit-jhameson-farias"
-          reviewers: "jhameson"
