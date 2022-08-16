@@ -25,13 +25,13 @@ jobs:
           user_email_fitbank: "jhameson.farias@fitbank.com.br"
           user_name_fitbank: "Fit-jhameson-farias"
 
-      - name: Create pull request on repository-02
-        uses: Fitbank-Pagamentos-Eletronicos/osb-action-create-pull-request@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          whiteLabel_source_folder: "*"
-          whiteLabel_repo: "Fit-jhameson-farias/repository-02"
-          whiteLabel_head_branch: "features"
-          user_email_fitbank: "jhameson.farias@fitbank.com.br"
-          user_name_fitbank: "Fit-jhameson-farias"
+      # - name: Create pull request on repository-02
+      #   uses: Fitbank-Pagamentos-Eletronicos/osb-action-create-pull-request@main
+      #   env:
+      #     API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      #   with:
+      #     whiteLabel_source_folder: "*"
+      #     whiteLabel_repo: "Fit-jhameson-farias/repository-02"
+      #     whiteLabel_head_branch: "features"
+      #     user_email_fitbank: "jhameson.farias@fitbank.com.br"
+      #     user_name_fitbank: "Fit-jhameson-farias"
