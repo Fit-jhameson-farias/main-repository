@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Create pull request on repository-01
-        uses: Fitbank-Pagamentos-Eletronicos/osb-action-create-pull-request@main
+        uses: Fit-jhameson-farias/action-pr@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
