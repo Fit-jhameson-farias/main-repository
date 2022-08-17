@@ -20,6 +20,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_folder: "*"
+          base_repo: "Fit-jhameson-farias/main-repository"
           destination_repo: "Fit-jhameson-farias/repository-01"
           destination_head_branch: "features"
           user_email: "jhameson.farias@fitbank.com.br"
