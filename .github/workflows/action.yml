@@ -19,7 +19,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_folder: "/main-repository/"
+          source_folder: "/assets"
           base_repo: "Fit-jhameson-farias/main-repository"
           destination_repo: "Fit-jhameson-farias/repository-01"
           destination_head_branch: "features"
